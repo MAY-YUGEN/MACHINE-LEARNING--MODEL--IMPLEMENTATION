@@ -1,14 +1,14 @@
-import string
+import string # Helps with removing punctuation
 import numpy as np
 import pandas as pd
 
 import nltk
 from nltk.corpus import stopwords
-from nltk.stem.porter import PorterStemmer
+from nltk.stem.porter import PorterStemmer # Reduces words to their root form
 
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.feature_extraction.text import CountVectorizer  #Converts text into numerical format for ML
+from sklearn.model_selection import train_test_split # Splits data into training and testing sets
+from sklearn.ensemble import RandomForestClassifier # Machine learning model for text classification
 
 nltk.download('stopwords')
 
